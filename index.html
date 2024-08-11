@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Read, Write, Update, Delete</title>
   </head>
   <body>
@@ -154,7 +155,16 @@
 
     }
 
-
+      /* Media Queries for responsiveness */
+      @media (max-width: 600px) {
+        #title_container {
+          font-size: 14px; /* Smaller font size on small screens */
+        }
+    
+        #submit {
+          width: 80%; /* Make the button larger on small screens */
+        }
+      }
   </style>
   <script>
     function typingEffect() {
@@ -210,6 +220,8 @@
 
           return array;
       }
+
+
   </script>
 
 
