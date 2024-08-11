@@ -19,8 +19,8 @@
   #container {
     width: 90%; /* Use a percentage for responsive width */
     height: auto; /* Allow height to adjust based on content */
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: #FCBF49;
     border-radius: 10px;
     outline: 3px solid #fff;
