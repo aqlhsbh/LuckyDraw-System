@@ -39,6 +39,7 @@ function get() {
   user_ref.on('value', function(snapshot) {
     if (snapshot.exists()) { // Check if the snapshot has a value
       var data = snapshot.val();
+      update();
       resultDisplay.innerHTML = `Your Lucky Number: <br> ${data.LuckyNo}`; // Display the found name
       triggerConfetti();
       //alert(data.LuckyNo);
@@ -47,6 +48,20 @@ function get() {
     }
   });
 }
+
+function update(){
+  var PSNo = document.getElementById('PSNo').value;
+  var Attendance = "Yes";
+
+  var updates = {
+    Attendance : Attendance
+  }
+
+  database.ref('15Q33qjJUbF97BnL7BbQORvrjpsF3slCBom3jOjb7Wqc/Sheet1/'+PSNo).update(updates)
+
+}
+
+
 function triggerConfetti() {
   // Trigger confetti effect
   confetti({
