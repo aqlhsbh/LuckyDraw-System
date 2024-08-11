@@ -30,19 +30,31 @@ var database = firebase.database()
   alert('Saved')
 }*/
 
-  function get() {
-  var PSNo = document.getElementById('PSNo').value
+function get() {
+  document.getElementById('result').innerText = '';
+  var PSNo = document.getElementById('PSNo').value;
+  const resultDisplay = document.getElementById('result');
 
-  var user_ref = database.ref('15Q33qjJUbF97BnL7BbQORvrjpsF3slCBom3jOjb7Wqc/Sheet1/' + PSNo)
+  var user_ref = database.ref('15Q33qjJUbF97BnL7BbQORvrjpsF3slCBom3jOjb7Wqc/Sheet1/' + PSNo);
   user_ref.on('value', function(snapshot) {
-    var data = snapshot.val()
-
-    alert(data.LuckyNo)
-
-  })
-
+    if (snapshot.exists()) { // Check if the snapshot has a value
+      var data = snapshot.val();
+      resultDisplay.innerHTML = `Your Lucky Number: <br> ${data.LuckyNo}`; // Display the found name
+      triggerConfetti();
+      //alert(data.LuckyNo);
+    } else {
+      resultDisplay.textContent = 'User ID not found';
+    }
+  });
 }
-
+function triggerConfetti() {
+  // Trigger confetti effect
+  confetti({
+      particleCount: 200,
+      spread: 90,
+      origin: { y: 0.6 }
+  });
+}
 /*function update() {
   var username = document.getElementById('username').value
   var email = document.getElementById('email').value
