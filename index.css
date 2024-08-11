@@ -18,7 +18,7 @@
 
   #container {
     width: 90%; /* Use a percentage for responsive width */
-    max-width: 600px; /* Set a max width for larger screens */
+    max-width: 100px; /* Set a max width for larger screens */
     height: auto; /* Allow height to adjust based on content */
 
     background-color: #FCBF49;
