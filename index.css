@@ -1,0 +1,167 @@
+ /* https://coolors.co/003049-d62828-f77f00-fcbf49-eae2b7 */
+ html, body {
+    width: 100%;
+    height: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to right, rgba(214, 40, 40, 0.5),rgba(255, 107, 107, 0.5), rgba(255, 165, 0, 0.5)), url('C:/Users/ps09272023/Downloads/060924/luckydraw-main/luckydraw-main/Cuixmala-22 (1).jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  #container {
+    width: 35%;
+    height: 400px;
+
+    background-color: #FCBF49;
+    border-radius: 10px;
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+    -moz-outline-radius: 10px;
+
+  }
+
+  #title_container {
+    width: 100%;
+    height: 5%;
+
+    text-align: center;
+    float: left;
+    margin: 0;
+
+    color: #003049;
+    text-transform: uppercase;
+    font-family: Verdana;
+    font-size: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+
+    color: #003049;
+  }
+
+
+  #form_container {
+    width: 100%;
+    height: 50%;
+
+    float: left;
+    margin-top: 2px;
+    padding-left: 50px;
+    padding-right: 70px;
+
+    box-sizing: border-box;
+  }
+  
+
+ 
+  #button_container {
+    width: 100%;
+    height: 5%;
+
+    text-align: center;
+    float: left;
+    margin-bottom: 50px;
+
+    font-family: Verdana;
+
+  }
+
+  #submit {
+    width: 25%;
+    height: 35px;
+
+    background-color: #D62828;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+
+  #content {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+    float: left;
+
+    color: #D62828;
+    margin-right: 5px;
+  }
+
+
+  .typedtext {
+    display: inline-block;
+    height: 100%;
+    margin: 10px;
+    padding: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #D62828;
+  
+    white-space: nowrap; /* Prevent text from wrapping */
+    
+  }
+
+    /* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  #title_container {
+    font-size: 14px; /* Smaller font size on small screens */
+  }
+
+  #submit {
+    width: 80%; /* Make the button larger on small screens */
+  }
+}
+
+  /* Styling the input field */
+  #PSNo {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for better spacing */
+    margin: 10px 0; /* Margin for spacing between elements */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Larger font size */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+  }
+
+/* Change border color on focus */
+#PSNo:focus {
+    border-color: #45a049; /* Darker green on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(72, 187, 120, 0.5); /* Add shadow effect */
+}
+
+/* Placeholder styling */
+#PSNo::placeholder {
+    color: #888; /* Placeholder text color */
+    font-style: italic; /* Italic style for placeholder */
+}
+
+.result-display {
+    font-size: 20px; /* Larger font size for emphasis */
+    color: black; /* Bright color for visibility */
+    font-weight: bold;
+    margin-top: 20px; /* Space above the result */
+    animation: fadeIn 1s ease; /* Animation for appearance */
+    text-align: center; /* Center the text */
+    font-family: 'Permanent+Marker', cursive; /* Apply the special font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
