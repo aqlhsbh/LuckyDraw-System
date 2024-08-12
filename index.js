@@ -32,7 +32,8 @@ var database = firebase.database()
 
 function get() {
   document.getElementById('result').innerText = '';
-  var PSNo = document.getElementById('PSNo').value;
+  var PSNo2 = document.getElementById('PSNo').value;
+  var PSNo = PSNo2.toUpperCase();
   const resultDisplay = document.getElementById('result');
 
   var user_ref = database.ref('15Q33qjJUbF97BnL7BbQORvrjpsF3slCBom3jOjb7Wqc/Sheet1/' + PSNo);
@@ -50,7 +51,8 @@ function get() {
 }
 
 function update(){
-  var PSNo = document.getElementById('PSNo').value;
+  var PSNo2 = document.getElementById('PSNo').value;
+  var PSNo = PSNo2.toUpperCase();
   var Attendance = "Yes";
 
   var updates = {
