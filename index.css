@@ -160,7 +160,7 @@
 
 .result-display {
     font-size: 20px; /* Larger font size for emphasis */
-    color: black; /* Bright color for visibility */
+    color: white; /* Bright color for visibility */
     font-weight: bold;
     margin-top: 20px; /* Space above the result */
     animation: fadeIn 1s ease; /* Animation for appearance */
