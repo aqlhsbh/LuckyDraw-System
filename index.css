@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(to right, rgba(214, 40, 40, 0.5),rgba(255, 107, 107, 0.5), rgba(255, 165, 0, 0.5)), url('./images/image.jpg'); /* Replace with your image path */
+    background-image:url('./images/Dinner_Backdrop .png'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     height: 70%; /* Allow height to adjust based on content */
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #FCBF49;
+    background-color: rgba(36, 93, 162, 0.5);
     border-radius: 10px;
     outline: 3px solid #fff;
     outline-offset: 3px;
@@ -82,7 +82,7 @@
     width: 25%;
     height: 35px;
 
-    background-color: #D62828;
+    background-color: #FCBF49;
     border-radius: 5px;
     font-weight: bold;
     color: #fff;
@@ -101,7 +101,7 @@
     float: left;
     margin-top: 20px;
 
-    color: #D62828;
+    color: #FCBF49;
     margin-right: 5px;
   }
 
@@ -117,7 +117,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 5px;
-    border-bottom: 2px solid #D62828;
+    border-bottom: 2px solid #FCBF49;
   
     white-space: nowrap; /* Prevent text from wrapping */
     
@@ -139,7 +139,7 @@
     width: 100%; /* Full width */
     padding: 10px; /* Padding for better spacing */
     margin: 10px 0; /* Margin for spacing between elements */
-    border: 2px solid #4CAF50; /* Green border */
+    border: 2px solid #FCBF49; /* Green border */
     border-radius: 5px; /* Rounded corners */
     font-size: 16px; /* Larger font size */
     transition: border-color 0.3s; /* Smooth transition for border color */
